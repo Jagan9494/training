@@ -1,0 +1,7 @@
+stepDefinitions\ProjectCommonActions.class
+selenium\BrowserStepDefinions.class
+selenium\Wait.class
+selenium\HooksHandles.class
+runners\TestRunner.class
+stepDefinitions\Steps.class
+stepDefinitions\PracticeFormSteps.class
