@@ -51,10 +51,11 @@ public class WebDriverManager {
         case FIREFOX : driver = new FirefoxDriver();
 	    	break;
         case CHROME : 
-        	//String driverPath=cfr.getDriverPath();
-        	//System.setProperty(CHROME_DRIVER_PROPERTY, cfr.getDriverPath());
+        	String driverPath=cfr.getDriverPath();
+        	System.setProperty(CHROME_DRIVER_PROPERTY, cfr.getDriverPath());
         			//FileReaderManager.getInstance().getConfigReader().getDriverPath());
-        	driver = new HtmlUnitDriver();
+        	//driver = new HtmlUnitDriver();
+        	driver = new ChromeDriver();
     		break;
         case INTERNETEXPLORER : driver = new InternetExplorerDriver();
     		break;
