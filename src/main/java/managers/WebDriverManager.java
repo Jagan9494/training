@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import dataProviders.ConfigFileReader;
@@ -51,9 +52,9 @@ public class WebDriverManager {
 	    	break;
         case CHROME : 
         	//String driverPath=cfr.getDriverPath();
-        	System.setProperty(CHROME_DRIVER_PROPERTY, cfr.getDriverPath());
+        	//System.setProperty(CHROME_DRIVER_PROPERTY, cfr.getDriverPath());
         			//FileReaderManager.getInstance().getConfigReader().getDriverPath());
-        	driver = new ChromeDriver();
+        	driver = new HtmlUnitDriver();
     		break;
         case INTERNETEXPLORER : driver = new InternetExplorerDriver();
     		break;
